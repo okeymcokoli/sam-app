@@ -76,12 +76,12 @@ aws configure
 
 4. Review the CloudFormation stack changeset and enter 'Y'[YES] to confirm resources to be deployed.
 
-    - [ ] AWS Lambda Permission
-    - [ ] AWS IAM Role
-    - [ ] AWS Lambda Function
-    - [ ] AWS API Gateway
-    - [ ] AWS API stage
-    - [ ] AWS REST API
+    - [x] AWS Lambda Permission
+    - [x] AWS IAM Role
+    - [x] AWS Lambda Function
+    - [x] AWS API Gateway
+    - [x] AWS API stage
+    - [x] AWS REST API
 
 5. Verify your resources have been successfully deployed using the Endpoints.
 
