@@ -11,7 +11,7 @@ This repository shows how to utilize SAM-CLI to deploy a simple Serverless Appli
 - [Getting Started](getting-started)
 - [Start Deployment](#start-deployments)
 - [Endpoints](#endpoints)
-- [API-Endpoint-Invoke Lambda](#APIEndpointInvoke-Lambda)
+- [API-Endpoint-Invoke Lambda](#API-Endpoint-Invoke-Lambda)
 - [Docker-Invoke Lambda](#Docker-Invoke-Lambda)
 - [Contributing](#contributing)
 - [License](#license)
@@ -25,6 +25,7 @@ This repository shows how to utilize SAM-CLI to deploy a simple Serverless Appli
 
 
 Verify your installations by running these commands:
+
 1. 
 
 ```
@@ -46,6 +47,8 @@ You should get custom feedbacks showing successful and functional installations 
 
 - Create an IAM user with permissions to deploy Lambda and REST API (For tutorial purposes only, you can assign Admin access to your IAM). run the following cmd and follow the prompt to configure your iam-user using the cli.
 
+4. 
+
 ```
 aws configure
 ```
@@ -59,19 +62,19 @@ aws configure
 
 
 ### Start Deployments
-3. Once your variables are in place, run the following cmd on your CLI
+1. Once your variables are in place, run the following cmd on your CLI
 
     ```
     sam build
     ```
 
-4. The "build is successful" displayed on the terminal shows you it is time to deploy, run:
+2. The "build is successful" displayed on the terminal shows you it is time to deploy, run:
     ```
     sam deploy --guided
     ```
-5. Answer prompt questions and enter 'y' to confirm answers and initiate deploy.
+3. Answer prompt questions and enter 'y' to confirm answers and initiate deploy.
 
-6. Review the CloudFormation stack changeset and enter 'Y'[YES] to confirm resources to be deployed.
+4. Review the CloudFormation stack changeset and enter 'Y'[YES] to confirm resources to be deployed.
 
     - [ ] AWS Lambda Permission
     - [ ] AWS IAM Role
@@ -80,23 +83,25 @@ aws configure
     - [ ] AWS API stage
     - [ ] AWS REST API
 
-7. Verify your resources have been successfully deployed using the Endpoints.
+5. Verify your resources have been successfully deployed using the Endpoints.
 
 ### Endpoints
 
-8. Use your API Endpoint url to return response from your lambda function:
+1. Use your API Endpoint url to return response from your lambda function:
 
 ```
 https//restapi_id.execute-api.region.amazonaws.com/stage_name/
 ```
 
-9. Start your application locally using Docker:
+2. Start your application locally using Docker:
 
 ```
 sam local start-api
 ```
 
 sam will launch a docker container and provide you with your localhost id and the exposed port.
+
+3. 
 
 ```
 http://localhost:3000
@@ -105,14 +110,14 @@ http://localhost:3000
 
 
 ### API-Endpoint-Invoke Lambda
-10. copy and paste your API Endpoint with a stringQuery to trigger lambda and return result:
+4. copy and paste your API Endpoint with a stringQuery to trigger lambda and return result:
 
 ```
 https//restapi_id.execute-api.region.amazonaws.com/stage_name/hello?personid=10
 ```
 
 ### Docker-Invoke Lambda
-11. copy and paste your localhost id with a stringQuery to trigger lambda and return result:
+5. copy and paste your localhost id with a stringQuery to trigger lambda and return result:
 
 ```
 http://localhost:3000/hello?personid=11
