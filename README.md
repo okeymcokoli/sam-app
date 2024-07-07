@@ -113,14 +113,14 @@ http://localhost:3000
 4. copy and paste your API Endpoint with a QueryString to trigger lambda and return result:
 
 ```
-https//restapi_id.execute-api.region.amazonaws.com/stage_name/hello?personid=10
+https//restapi_id.execute-api.region.amazonaws.com/stage_name/hello?personId=10
 ```
 
 ### Docker-Invoke Lambda
 5. copy and paste your localhost id with a QueryString to trigger lambda and return result:
 
 ```
-http://localhost:3000/hello?personid=11
+http://localhost:3000/hello?personId=11
 ```
 
 ## Contributing
