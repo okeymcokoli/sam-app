@@ -29,7 +29,7 @@ Verify your installations by running these commands:
 1. 
 
 ```
-   aws
+aws
 ```
 
 2. 
